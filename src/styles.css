@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Code+Pro&display=swap");
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --blue: #1700ff;
+  --yellow: #fff900;
+
+  --light-shade: #eeefea;
+  --light-accent: #646772;
+  --main: #3a292a;
+  --dark-accent: #3a5b6b;
+  --dark-shade: #151418;
+
+  --code-foreground: var(--light-shade);
+  --code-background: var(--black);
+  --code-heading-foreground: var(--white);
+  --code-heading-background: var(--dark-accent);
+
+  --font-code: "Source Code Pro", monospace;
+  --figure-shadow: 1px 2px 5px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: var(--white);
+}
+
+#app {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 800px;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--main);
+}
+
+.code {
+  padding: 10px;
+}
+
+.figure {
+  display: block;
+  margin: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 575px;
+  min-width: 500px;
+  font-size: 0.8rem;
+}
+
+.figure > .heading {
+  font-weight: 400;
+  border-radius: 9px 9px 0 0;
+  padding: 5px;
+  background-color: var(--code-heading-background);
+  color: var(--code-heading-foreground);
+  box-shadow: var(--code-heading-background) var(--figure-shadow);
+}
+
+.figure > .code {
+  margin: 0px;
+  background-color: var(--code-background);
+  color: var(--code-foreground);
+  border-radius: 0 0 9px 9px;
+  box-shadow: var(--code-background) var(--figure-shadow);
+  font-family: var(--font-code);
+}

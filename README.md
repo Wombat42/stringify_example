@@ -1,6 +1,6 @@
 # Stringify Example
 
-JSON.stringify has a second parameter, _replacer_, that lets you filter out keys during the covnersion from a JS to JSON objects.
+JSON.stringify has a second parameter, _replacer_, that lets you filter out keys during the conversion from a JS to JSON objects.
 
 ```javascript
 const hostExample = {
